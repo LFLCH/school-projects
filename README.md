@@ -20,4 +20,5 @@ docker-compose -f docker-compose.administration.yml up -d
 After, just go on your favorite browser, and visit the frontend on ```localhost``` (with the ```1```&```valid_password``` credentials), the backend's API on ```http://localhost/```, and  watch the send of fake emails when creating new associations with members on ```http://localhost/maildev/#/```
  
 Otherwise, just watch the following video showing the project in a nutshell.<br>
-<video src='assets/administration.mp4' width="400" />
+
+https://user-images.githubusercontent.com/62034725/213479168-936b3705-f282-48c8-96de-2998f2ef6636.mp4
