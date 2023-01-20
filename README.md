@@ -58,3 +58,7 @@ It takes place in the 'Tools & Methods of modelisation' class, where we learnt (
 ▶️ : If Java is installed, you can try to run the jar file and enjoy playing with the editor !
 
 📹 : You can also watch the following video to make you an idea of the final result.<br>
+
+https://user-images.githubusercontent.com/62034725/213699879-90bce329-80d7-45a2-9de0-b41e1d800626.mp4
+
+
