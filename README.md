@@ -5,9 +5,9 @@ For each command you see in this readme, make sure you are in the associated fol
 
 ## While Compiler
 ### Presentation
-🚧 : Work in progress
-📆 : 3 months (Since October 2022)
-🧑‍💻 *️⃣3️⃣ : Groups of three, with [Bastien Faisant](https://github.com/Unstery) & [Kilian Cornec](https://github.com/Kali-ki)
+🚧 : Work in progress <br>
+📆 : 3 months (Since October 2022) <br>
+🧑‍💻 *️⃣3️⃣ : Groups of three, with [Bastien Faisant](https://github.com/Unstery) & [Kilian Cornec](https://github.com/Kali-ki)<br>
 
 📖 : In order to illustrate our Language Theory and Compilation course, we had to build a compiler able to follow all the steps of a compilation chain, allowing to go from a source code to a result displayed in command line. This compiler being for educational purposes, the programs it compiles are those written in the 'fictitious' While language, of which we wrote the grammar. 
 
