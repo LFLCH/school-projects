@@ -1,6 +1,22 @@
 # school-projects
-Demo of my school projects.
+Short presentation of my school projects.
 For each command you see in this readme, make sure you are in the associated folder before running it.
+
+
+## While Compiler
+### Presentation
+🚧 : Work in progress
+📆 : 3 months (Since October 2022)
+🧑‍💻 *️⃣3️⃣ : Groups of three, with [Bastien Faisant](https://github.com/Unstery) & [Kilian Cornec](https://github.com/Kali-ki)
+
+📖 : In order to illustrate our Language Theory and Compilation course, we had to build a compiler able to follow all the steps of a compilation chain, allowing to go from a source code to a result displayed in command line. This compiler being for educational purposes, the programs it compiles are those written in the 'fictitious' While language, of which we wrote the grammar. 
+
+🏗️ : [ANTLRWORKS](https://www.antlr3.org/works/) allowed us to automatically generate the code of a lexer and a parser (in java) from the description of the while language grammar that we described. We then continued by writing the code allowing us to :
+1. Build a table of symbols.
+2. Generate the 3 address code.
+3. Interpret 3 address code to write it in a target language (we chose C++)
+4. Execute the code written in this target language
+
 
 ## Administration 
 ### Presentation
