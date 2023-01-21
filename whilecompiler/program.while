@@ -1,0 +1,36 @@
+// True fonction
+function true :
+read
+%
+Result := (cons nil nil)
+%
+write Result
+
+function false :
+read
+%
+Result := nil
+%
+write Result
+
+function not :
+read Op1
+%
+if Op1 then Result := (false) else Result := (true) fi
+%
+write Result
+
+function main :
+read 
+%   
+    A, B := hello, world
+    C := (cons A B)
+    Choice := (false)
+    Choice := (not Choice) 
+    if Choice then Result := C 
+    else  
+        D := bye
+        Result := (cons D B)
+    fi
+%
+write Result

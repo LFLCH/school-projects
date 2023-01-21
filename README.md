@@ -5,13 +5,13 @@ For each command you see in this readme, make sure you are in the associated fol
 
 ## While Compiler
 ### Presentation
-🚧 : Work in progress 
-
-📆 : 3 months (Since October 2022) 
+📆 : 3 months (from mid-October 2022 to mid-January 2023) 
 
 🧑‍💻 *️⃣3️⃣ : Groups of three, with [Bastien Faisant](https://github.com/Unstery) & [Kilian Cornec](https://github.com/Kali-ki)<br>
 
-📖 : In order to illustrate our Language Theory and Compilation course, we had to build a compiler able to follow all the steps of a compilation chain, allowing to go from a source code to a result displayed in command line. This compiler being for educational purposes, the programs it compiles are those written in the 'fictitious' While language, of which we wrote the grammar. 
+🛠️ : ```java``` ```antlr``` ```c++``` ```bash```
+
+📖 : In order to illustrate our Language Theory and Compilation course, we had to build a compiler able to follow all the steps of a compilation chain, allowing to go from a source code to a result displayed in command line. This compiler being for educational purposes, the programs it compiles are those written in the 'fictional' While language, of which we wrote the grammar. 
 
 🏗️ : [ANTLRWORKS](https://www.antlr3.org/works/) allowed us to automatically generate the code of a lexer and a parser (in java) from the description of the while language grammar that we described. We then continued by writing the code allowing us to :
 1. Build a table of symbols.
@@ -19,12 +19,30 @@ For each command you see in this readme, make sure you are in the associated fol
 3. Interpret 3 address code to write it in a target language (we chose C++)
 4. Execute the code written in this target language
 
+### Demo
+▶️ : Beware, to use it you need to have a recent java version (above v11). <br>
+To start, just run ```./runner.bash program.while```. You should see a hello world message !
+For more help, just type ```./runner.bash -h```. It will display advices (in french), than can be translated by :
+```
+Format : ./runner.bash [-a] [-t] [-c] [-r] [-p] [-e] file.while
+-a : Display the AST
+-t : Display the symbol table 
+-c : Display the intermediate code 
+-r : Create the c++ file but do not run it
+-p : Do not delete the c++ file
+-e : Do not delete the executable
+```
+Just have fun by editing the program.while, taking the gwhile.g rules into consideration.
+
+
 
 ## Administration 
 ### Presentation
 📆 : 1 month (between December 2022 & January 2023) <br>
 
 🧑‍💻 *️⃣2️⃣ : In pairs, with [Bastien Faisant](https://github.com/Unstery) <br>
+
+🛠️ : ```angular```  ```nestjs``` ```quarkus``` ```docker```
 
 📖 : Administration is a web app, allowing to manage associations (like sport associations) by creating, deleting and modifying one of them, likewise with member accounts. 
 The construction of this app takes place in the framework of two classes : [```Web programming```](https://stephaniechallita.github.io/web/) (where we learnt how to make a backend and a frontend), and ```Software Architecture``` (where we learnt the basics of this domain, with the 'Service Oriented Computing' concept).
@@ -51,6 +69,8 @@ https://user-images.githubusercontent.com/62034725/213479168-936b3705-f282-48c8-
 
 🧑‍💻 *️⃣2️⃣ : In pairs, with [Bastien Faisant](https://github.com/Unstery) <br>
 
+🛠️ : ```java```
+
 📖 : Simple Editor is, as the name suggests a basic text editor. It has all the main common features that all text editors do share. Indeed, after having wrote some text, erasing, moving the cursor, selecting part of the text, copy, paste, undo and redo are actions you can apply to it. <br>
 It takes place in the 'Tools & Methods of modelisation' class, where we learnt (among other things like the importance of UML and the Sofware developpment life-cycle with agile methods) the 'design patterns' concept. We have put into practice this knowledge by implementing this editor, and trying to respect the [SOLID](https://en.wikipedia.org/wiki/SOLID) principles in the class design.
 
@@ -63,4 +83,20 @@ It takes place in the 'Tools & Methods of modelisation' class, where we learnt (
 
 https://user-images.githubusercontent.com/62034725/213699879-90bce329-80d7-45a2-9de0-b41e1d800626.mp4
 
+## Fourmis
+### Presentation
+📆 : 1 month (Between April and May 2022)
 
+🧑‍💻 *️⃣1️⃣ : Juste me !
+
+🛠️ : ```c++```
+
+📖 : Fourmis (french word for Ants 🐜) is a basic simulation of the behavior of ants when they look for food.  In this modelling, food resources (🟢) and anthills (🔵) can be created and randomly placed on the map. For each anthill's creation, a certain number of ants (⚪) are created. The goal of these ants is to seek food and bring it back to the anthill to keep it alive. To help in their search for food, and because ants are social insects, each individual produce a substance called "pheromone" during their activity, forming a path that other ants can follow. If a ant has found food, the production of pheromone will be more important, allowing a prioritization of the information. <br>
+This simulation was done within the framework of our C++ class, where we learnt the specificity of the language. Before this course, our knowledge of the object model was strongly linked to java, and it allowed us to approach this concept from a new point of view, especially concerning the memory management with the manipulation of pointers and references.
+
+🏗️ : Thanks to this project, we consolidated our knowledge in the Oriented Programming  (inheritance, polymorphism, abstraction..). It was also an opportunity to discover the concept of multi-agent systems and the programming of their behavior via a rule-based system.
+
+### Demo
+▶️ : If you have access to a c++ environment, make sure "SDL2.h" exists (you can install it with ```sudo apt-get install libsdl2-dev```), as well as for "SDL2_gfxPrimitives.h"  (follow the [repo's](https://github.com/RobLoach/sdl2_gfx) instructions to install it). Once everything seems ready, go on Fourmis/Debug. Then run ```make all``` to create the executable and ```./Fourmis``` to start. You'll see the interface appear. There, type ```f``` to create food resources,```d``` to delete the last one,```a``` to create an anthill, ```e``` to add new ants to the last anthill, and ```q``` to end the simulation.
+
+📹 : If you play with it, you should see something like in the folllowing video, or in [these](fourmis/Fourmis/img/) captures
