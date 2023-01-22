@@ -20,7 +20,7 @@ For each command you see in this readme, make sure you are in the associated fol
 4. Execute the code written in this target language
 
 ### Demo
-▶️ : Beware, to use it you need to have a recent java version (above v11). <br>
+▶️ : Beware, to use it you need to have a recent java version (above v16). <br>
 To start, just run ```./runner.bash program.while```. You should see a hello world message !
 For more help, just type ```./runner.bash -h```. It will display advices (in french), than can be translated by :
 ```
