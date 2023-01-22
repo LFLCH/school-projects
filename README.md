@@ -71,9 +71,9 @@ https://user-images.githubusercontent.com/62034725/213479168-936b3705-f282-48c8-
 🛠️ : ```java```
 
 📖 : Simple Editor is, as the name suggests a basic text editor. It has all the main common features that all text editors do share. Indeed, after having wrote some text, erasing, moving the cursor, selecting part of the text, copy, paste, undo and redo are actions you can apply to it. <br>
-It takes place in the 'Tools & Methods of modelisation' class, where we learnt (among other things like the importance of UML and the Sofware developpment life-cycle with agile methods) the 'design patterns' concept. We have put into practice this knowledge by implementing this editor, and trying to respect the [SOLID](https://en.wikipedia.org/wiki/SOLID) principles in the class design.
+It takes place in the 'Tools & Methods of modeling' class, where we learnt (among other things like the importance of UML and the Software development life-cycle with agile methods) the 'design patterns' concept. We have put into practice this knowledge by implementing this editor, and trying to respect the [SOLID](https://en.wikipedia.org/wiki/SOLID) principles in the class design.
 
-🏗️ : This project was done in java, because it is an object oriented language, which is particulary adapted to the constraints of this exercise. Moreover, it is a laguage that we are familiar with, which allowed us to concentrate on the design part. In addition, it allowed us to improve our skills in terms of GUI (with the swing library).
+🏗️ : This project was done in java, because it is an object oriented language, which is particularly adapted to the constraints of this exercise. Moreover, it is a language that we are familiar with, which allowed us to concentrate on the design part. In addition, it allowed us to improve our skills in terms of GUI (with the swing library).
 
 ### Demo
 ▶️ : If Java is installed, you can try to run the jar file and enjoy playing with the editor !
@@ -96,6 +96,8 @@ This simulation was done within the framework of our C++ class, where we learnt 
 🏗️ : Thanks to this project, we consolidated our knowledge in the Oriented Programming  (inheritance, polymorphism, abstraction..). It was also an opportunity to discover the concept of multi-agent systems and the programming of their behavior via a rule-based system.
 
 ### Demo
-▶️ : If you have access to a c++ environment, make sure "SDL2.h" exists (you can install it with ```sudo apt-get install libsdl2-dev```), as well as for "SDL2_gfxPrimitives.h"  (follow the [repo's](https://github.com/RobLoach/sdl2_gfx) instructions to install it). Once everything seems ready, go on Fourmis/Debug. Then run ```make all``` to create the executable and ```./Fourmis``` to start. You'll see the interface appear. There, type ```f``` to create food resources,```d``` to delete the last one,```a``` to create an anthill, ```e``` to add new ants to the last anthill, and ```q``` to end the simulation.
+▶️ : If you have access to a c++ environment, make sure "SDL2.h" exists (you can install it with ```sudo apt-get install libsdl2-dev```), as well as for "SDL2_gfxPrimitives.h"  (follow the [repo's](https://github.com/RobLoach/sdl2_gfx) instructions to install it). Once everything seems ready, go on Fourmis/Debug. Then run ```make all``` to create the executable and ```./Fourmis``` to start. You'll see the interface appear. There, type ```f``` to create food ressources,```d``` to delete the last one,```a``` to create an anthill, ```e``` to add new ants to the last anthill, and ```q``` to end the simulation.
 
-📹 : If you play with it, you should see something like in the folllowing video, or in [these](fourmis/Fourmis/img/) captures
+📹 : If you play with it, you should see something like in the following video, or in [these](fourmis/Fourmis/img/) captures
+
+https://user-images.githubusercontent.com/62034725/213896468-51edd675-d7ee-4bb3-8d6d-012a0cb9bba7.mp4
