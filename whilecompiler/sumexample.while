@@ -1,0 +1,18 @@
+function add :
+read Op1, Op2
+%
+Result := Op1
+for Op2 do
+    Result := ( cons nil Result )
+od
+%
+write Result
+
+function main:
+read
+%
+    Un := (cons nil nil)
+    Deux := (add Un Un)
+    Result := (add Deux Deux)
+%
+write Result

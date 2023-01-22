@@ -32,8 +32,7 @@ Format : ./runner.bash [-a] [-t] [-c] [-r] [-p] [-e] file.while
 -p : Do not delete the c++ file
 -e : Do not delete the executable
 ```
-Just have fun by editing the program.while, taking the gwhile.g rules into consideration.
-
+Just have fun by editing the program.while, taking the *gwhile.g* rules into consideration, or reading seeing the .while file examples. And if you understand french, you can  read the *rapport_fr.pdf* file. 
 
 
 ## Administration 
