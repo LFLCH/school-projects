@@ -7,7 +7,7 @@ For each command you see in this readme, make sure you are in the associated fol
 ### Presentation
 📆 : 3 months (from mid-October 2022 to mid-January 2023) 
 
-🧑‍💻 *️⃣3️⃣ : Groups of three, with [Bastien Faisant](https://github.com/Unstery) & [Kilian Cornec](https://github.com/Kali-ki)<br>
+🧑‍💻 *️⃣3️⃣ : Group of three, with [Bastien Faisant](https://github.com/Unstery) & [Kilian Cornec](https://github.com/Kali-ki)<br>
 
 🛠️ : ```java``` ```antlr``` ```c++``` ```bash```
 
@@ -32,7 +32,7 @@ Format : ./runner.bash [-a] [-t] [-c] [-r] [-p] [-e] file.while
 -p : Do not delete the c++ file
 -e : Do not delete the executable
 ```
-Just have fun by editing the program.while, taking the *gwhile.g* rules into consideration, or reading seeing the .while file examples. And if you understand french, you can  read the *rapport_fr.pdf* file. 
+Just have fun by editing the program.while, taking the [*gwhile.g*](whilecompiler/gwhile.g) rules into consideration, or reading seeing the .while file examples. And if you understand french, you can  read the [*rapport_fr.pdf*](whilecompiler/rapport_fr.pdf) file. 
 
 
 ## Administration 
