@@ -86,7 +86,7 @@ https://user-images.githubusercontent.com/62034725/213699879-90bce329-80d7-45a2-
 ### Presentation
 📆 : 1 month (Between April and May 2022)
 
-🧑‍💻 *️⃣1️⃣ : Juste me !
+🧑‍💻 *️⃣1️⃣ : Just me !
 
 🛠️ : ```c++```
 
