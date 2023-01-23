@@ -56,7 +56,7 @@ Having this task as a coherent project was a great opportunity to put these newl
 ```bash
 docker-compose -f docker-compose.administration.yml up -d
 ```
-After, just go on your favorite browser, and visit the frontend on ```localhost``` (with the ```1```&```valid_password``` credentials), the backend's API on ```http://localhost/```, and  watch the send of fake emails when creating new associations with members on ```http://localhost/maildev/#/```
+After, just go on your favorite browser, and visit the frontend on [```localhost```](http://localhost) (with the ```1``` & ```valid_password``` credentials), the backend's API on [```localhost/api```](http://localhost/api), and  watch the send of fake emails when creating new associations with members on [```http://localhost/maildev/#/```](http://localhost/maildev/#/)
  
 📹 : Otherwise, just watch the following video showing the project in a nutshell.<br>
 
@@ -101,3 +101,39 @@ This simulation was done within the framework of our C++ class, where we learnt 
 📹 : If you play with it, you should see something like in the following video, or in [these](fourmis/Fourmis/img/) captures
 
 https://user-images.githubusercontent.com/62034725/213896468-51edd675-d7ee-4bb3-8d6d-012a0cb9bba7.mp4
+
+# Work in progress
+////////////////////////////////////////////////////////////////////////
+
+🚧The Following projects presentations are not finished of editing🚧<br>
+*I am currently looking for my old projects* <br>
+*and the executables that were associated with them*
+
+//////////////////////////////////////////////////////////////////////
+
+
+## Hackathon
+### Presentation
+📆 : 2 days (May 2022)
+
+🧑‍💻 : Group of 4 students :  Jérémy Bindel, Germaine Nyatsikor, Yazid Benjamaa & I.
+
+🛠️ : ```java```
+
+📖 : 2D action-adventure game in less than 28 hours. In Java, with the Swing library. It was a subject in its own right, but we did not have a specific lesson (we followed the instructions given in the morning)
+
+## Hangman Game
+### Presentation
+📆 : 1 month (June 2021)
+
+🧑‍💻 : In pairs, with Jérémy Bindel
+
+🛠️ : ```HTML5``` ```CSS``` ```JavaScript``` ```PHP```
+
+📖 : Game development with basic web and database technologies of a hangman game. It was the final part of our WEB class, where we learnt the fundamentals, with a lot of practical works.
+
+
+ 
+
+
+
