@@ -96,7 +96,7 @@ This simulation was done within the framework of our C++ class, where we learnt 
 🏗️ : Thanks to this project, we consolidated our knowledge in the Oriented Programming  (inheritance, polymorphism, abstraction..). It was also an opportunity to discover the concept of multi-agent systems and the programming of their behavior via a rule-based system.
 
 ### Demo
-▶️ : If you have access to a c++ environment, make sure "SDL2.h" exists (you can install it with ```sudo apt-get install libsdl2-dev```), as well as for "SDL2_gfxPrimitives.h"  (follow the [repo's](https://github.com/RobLoach/sdl2_gfx) instructions to install it). Once everything seems ready, go on Fourmis/Debug. Then run ```make all``` to create the executable and ```./Fourmis``` to start. You'll see the interface appear. There, type ```f``` to create food ressources,```d``` to delete the last one,```a``` to create an anthill, ```e``` to add new ants to the last anthill, and ```q``` to end the simulation.
+▶️ : If you have access to a c++ environment, make sure "SDL2.h" exists (you can install it with ```sudo apt-get install libsdl2-dev```), as well as for "SDL2_gfxPrimitives.h"  (follow the [repo's](https://github.com/RobLoach/sdl2_gfx) instructions to install it). Once everything seems ready, go on Fourmis/Debug. Then run ```make all``` to create the executable and ```./Fourmis``` to start. You'll see the interface appear. There, type <kbd>f</kbd> to create food ressources,<kbd>d</kbd> to delete the last one,<kbd>a</kbd> to create an anthill, <kbd>e</kbd> to add new ants to the last anthill, and <kbd>q</kbd> to end the simulation.
 
 📹 : If you play with it, you should see something like in the following video, or in [these](fourmis/Fourmis/img/) captures
 
