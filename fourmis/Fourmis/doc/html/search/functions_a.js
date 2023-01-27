@@ -1,4 +1,0 @@
-var searchData=
-[
-  ['perceive',['perceive',['../class_environment_1_1_localized_entity.html#a0828c1e361058abe9d752df9b1adbf86',1,'Environment::LocalizedEntity::perceive(Vector2&lt; float &gt; const &amp;direction, float openingAngle, float extent, float minimumDistance=0.01) const'],['../class_environment_1_1_localized_entity.html#a6378826cb0ac38cf99e67be3c7f8a8ce',1,'Environment::LocalizedEntity::perceive() const'],['../class_environment.html#a77011a455bba9d66e30f700b76b9bb75',1,'Environment::perceive(const Vector2&lt; unsigned int &gt; &amp;cell) const'],['../class_environment.html#a2d88e3b27e2c5321094a4912abb72321',1,'Environment::perceive(Vector2&lt; float &gt; const &amp;position, const Vector2&lt; float &gt; &amp;direction, float openingAngle, float extent, float minimumDistance=0.01f) const']]]
-];
