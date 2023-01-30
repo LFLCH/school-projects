@@ -116,7 +116,7 @@ https://user-images.githubusercontent.com/62034725/213896468-51edd675-d7ee-4bb3-
 ### Presentation
 📆 : 2 days (May 2022)
 
-🧑‍💻 : Group of 4 students :  Jérémy Bindel, Germaine Nyatsikor, Yazid Benjamaa & I.
+🧑‍💻 : Group of 4 students :  [Jérémy Bindel](https://github.com/J-Bindel), [Fanny Nyatsikor](https://github.com/itsFanix), [Yazid Benjamaa](https://github.com/Xacone) & I.
 
 🛠️ : ```java```
 
