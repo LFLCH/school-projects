@@ -2,7 +2,14 @@
 Short presentation of my school projects.
 For each command you see in this readme, make sure you are in the associated folder before running it.
 
+<!-- # Ongoing projects
+## Brain tumor
+### Presentation
+📆 : 5 months (from November 2022 to April 2023) 
+🧑‍💻 *️⃣4️⃣ : 
+https://github.com/FenrirWolf4566/brain-tumor-->
 
+# Completed projects
 ## While Compiler
 ### Presentation
 📆 : 3 months (from mid-October 2022 to mid-January 2023) 
@@ -102,7 +109,7 @@ This simulation was done within the framework of our C++ class, where we learnt 
 
 https://user-images.githubusercontent.com/62034725/213896468-51edd675-d7ee-4bb3-8d6d-012a0cb9bba7.mp4
 
-# Work in progress
+# Projects retrieving
 ////////////////////////////////////////////////////////////////////////
 
 🚧The Following projects presentations are not finished of editing🚧<br>
