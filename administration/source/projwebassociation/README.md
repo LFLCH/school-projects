@@ -89,15 +89,6 @@ Le module ```roles``` permet de :
 ## Structure
 Le projet est organisé selon la logique des endpoint : chaque composant correspond à un endpoint spécifique. 
 
-## Commentaires
-
-### Branches
-
-Ce dépôt contient plusieurs branches, mais seule la branche courante  ```main``` est à prendre en compte, les deux autres ne sont plus maintenues.
-- La branche ```main``` contient le projet fonctionnel et opérationnel. 
-- La branche ```al``` est une branche qui a été utilisée dans une optique de conteneurisation du projet.
-- La branche ```otherVersion``` a permis à @BastienFaisant d'implémenter son propre back end du projet jusqu'à l'étape 8.
-
-### Auteurs
+## Auteurs
 Ce projet a été réalisé en binôme par @LéoFiloche et @BastienFaisant, suivant les <a href="https://github.com/stephaniechallita/WebServer-course">consignes </a> des responsables de l'UE Web du S7.
 
