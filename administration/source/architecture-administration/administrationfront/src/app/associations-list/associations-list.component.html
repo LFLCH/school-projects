@@ -1,0 +1,98 @@
+<app-nav></app-nav>
+<div class="body">
+  <h1>
+    Liste des associations
+  </h1>
+  <mat-drawer-container autosize="false">
+    <div class="revision">
+      <div class="editing-buttons">
+        <button mat-fab extended [color]="this.searchMode?'none':'primary'" (click)="toggleDrawer(drawer,'search')">
+          <mat-icon>search</mat-icon>
+          Rechercher
+        </button>
+        <button mat-fab extended [color]="this.addAssoMode?'none':'accent'" [disabled]="!this.editionMode" (click)="toggleDrawer(drawer,'add')">
+          <mat-icon>domain_add</mat-icon>
+          Ajouter une association
+        </button>
+        <button  *ngIf="this.expandedElement!==null" [disabled]="!this.editionMode" mat-fab extended [color]="this.modifMembersMode?'none':'accent'" (click)="toggleDrawer(drawer,' modifmembers');">
+          <mat-icon>people_outline</mat-icon>
+          Modifier les membres
+        </button>
+      </div>
+      <div class="editing-infos">
+        <mat-icon>{{this.editing?'cloud_off':'cloud_done'}}</mat-icon>
+        <mat-slide-toggle (toggleChange)="toggleEditionMode()"> {{this.editionMode?'Édition':'Révision'}}</mat-slide-toggle>
+      </div>
+    </div>
+    
+    <table mat-table
+       [dataSource]="displayedAssos" multiTemplateDataRows
+       class="mat-elevation-z8">
+       <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> 
+          <span *ngIf="!this.editionMode;else delIcon">
+            id
+            <mat-icon style="visibility: hidden;position:relative;">delete</mat-icon>
+          </span>
+          <ng-template #delIcon>
+            <span>
+              <mat-icon>delete</mat-icon>
+            </span>
+          </ng-template>
+        </th>
+        <td mat-cell *matCellDef="let asso of displayedAssos"> 
+          <span *ngIf="!this.editionMode; else delBlock">{{asso.id}}</span>
+          <ng-template #delBlock><button mat-mini-fab disabled (click)="delete(asso)" [disabled]="!this.editionMode"><mat-icon>delete</mat-icon></button>
+          </ng-template>
+        </td>
+      </ng-container>
+      
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Nom </th>
+        <td mat-cell *matCellDef="let asso"><input (focusout)="modifyingasso(asso)"  (keydown.enter)="enter($event);"  [disabled]="!this.editionMode" (keyup)="editing=true"  [type]="'text'" [(ngModel)]="asso.name"> </td>
+      </ng-container>
+  <ng-container matColumnDef="expand">
+    <th mat-header-cell *matHeaderCellDef aria-label="row actions">Adhérents</th>
+    <td mat-cell *matCellDef="let element" class="hemmed">
+      <button   mat-fab extended   [color]="expandedElement !== element?'primary':'none'" (click)="$event.stopPropagation();toggleDetails(element,'arrow');assoSelected=element" > 
+        <mat-icon>groups</mat-icon>
+        {{element.users.length}}
+      </button>
+    </td>
+  </ng-container>
+
+  <!-- Expanded Content Column -->
+  <ng-container matColumnDef="expandedDetail">
+    <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplayWithExpand.length">
+      <div
+           [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
+        <div class="detail-element">
+          <a *ngFor="let user of element.users" [routerLink]="'/users'" [queryParams]="{'id':user.id}">{{user.firstname}} {{user.lastname}}, </a>
+        </div>
+      </div>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpand"></tr>
+  <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpand;"
+      class="element-row"
+      [class.example-expanded-row]="expandedElement === element"
+      (click)="toggleDetails(element,'clic')">
+  </tr>
+  <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="detail-row"></tr>
+</table>
+    
+    <mat-drawer #drawer mode="side" (closed)="closeSearchMode();addAssoMode=false; modifMembersMode=false;">
+      <div *ngIf="this.searchMode">
+        <app-side-search-association [assos]="this.assos" [(displayedAssos)]="this.displayedAssos" (filterChange)="updateSearchUrl()"></app-side-search-association>
+      </div>
+      <div *ngIf="addAssoMode">
+        <app-side-creation-association (creation)="addAssoRow($event)"></app-side-creation-association>
+      </div>
+      <div *ngIf=" modifMembersMode && assoSelected!==null">
+        <app-side-modify-members (checking)="modifyingasso(expandedElement!)" [asso]="assoSelected"></app-side-modify-members>
+      </div>
+    </mat-drawer>
+  </mat-drawer-container>
+</div>
+

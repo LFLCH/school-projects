@@ -1,0 +1,15 @@
+<h2>Rechercher une association</h2>
+<form class="sidenav-input-wrapper">
+    <mat-form-field>
+        <mat-label>Id</mat-label>
+        <input matInput [type]="'number'" min="0" [placeholder]="'Indiquez un numéro utilisateur'" [(ngModel)]="this.assoResearch.id"  (keyup)="filteredAssoResearch()"  (change)="filteredAssoResearch()" name="id">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Nom d'association</mat-label>
+        <input matInput [type]="'text'"  [placeholder]="'Indiquez un nom'" [(ngModel)]="this.assoResearch.name" (keyup)="filteredAssoResearch()" (change)="filteredAssoResearch()" name="name">
+    </mat-form-field> 
+    <div class="side-buttons-wrapper"><button  mat-fab [disabled]="researchIsEqualToMock()" (click)="resetSearch();filteredAssoResearch()">
+        <mat-icon>close</mat-icon>
+    </button> 
+</div>
+</form>

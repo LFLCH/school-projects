@@ -1,0 +1,21 @@
+<form class="sidenav-input-wrapper">
+    <mat-form-field>
+        <mat-label>Id</mat-label>
+        <input matInput [type]="'number'" min="0" [placeholder]="'Indiquez un numéro utilisateur'" [(ngModel)]="this.userResearch.id"  (keyup)="filteredUserResearch()"  (change)="filteredUserResearch()" name="id">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Prénom</mat-label>
+        <input matInput [type]="'text'"  [placeholder]="'Indiquez un prénom'" [(ngModel)]="this.userResearch.firstname" (keyup)="filteredUserResearch()" (change)="filteredUserResearch()" name="firstname">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Nom</mat-label>
+        <input matInput [type]="'text'"  [placeholder]="'Indiquez un nom'" [(ngModel)]="this.userResearch.lastname"  (keyup)="filteredUserResearch()" (change)="filteredUserResearch()" name="lastname">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Age</mat-label>
+        <input matInput [type]="'number'"  min="0" [placeholder]="'Indiquez un âge'" [(ngModel)]="this.userResearch.age"  (keyup)="filteredUserResearch()"  (change)="filteredUserResearch()" name="age">
+    </mat-form-field> 
+    <div class="side-buttons-wrapper"><button  mat-fab [disabled]="researchIsEqualToMock()" (click)="resetSearch();filteredUserResearch()">
+        <mat-icon>close</mat-icon>
+    </button> </div>
+</form>

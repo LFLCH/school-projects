@@ -1,0 +1,58 @@
+version: '3'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    hostname: rabbitmq
+    container_name: rabbitmq
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq/
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  db:
+    image: mysql
+    container_name: db
+    environment:
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_DATABASE: 'db'
+  backend:
+    container_name: backend
+    build:
+      context: ./projwebassociation
+      dockerfile: Dockerfile
+    volumes:
+      - ./projwebassociation:/usr/src/app
+    ports:
+      - 3000:3000
+  frontend:
+    container_name: frontend
+    build:
+      context: ./administrationfront
+      dockerfile: Dockerfile
+    volumes:
+      - ./administrationfront:/usr/src/app
+    ports:
+      - 80:80
+  quarkus:
+    container_name: quarkus
+    build:
+      context: ./quarkus-app
+      # Remplacer le dockerfile pour teste le Dockerfile.native
+      dockerfile: src/main/docker/Dockerfile.jvm
+      # dockerfile: src/main/docker/Dockerfile.native
+    volumes:
+      - ./quarkus-app:/usr/src/app
+    ports:
+      - 8081:8081
+    environment:
+      RABBITMQ_HOST: rabbitmq
+      RABBITMQ_PORT: 5672
+  maildev:
+    image: maildev/maildev
+    container_name: maildev
+    ports:
+      - "1080:1080"
+      - "1025:1025"
+
+volumes:
+  rabbitmq-data:

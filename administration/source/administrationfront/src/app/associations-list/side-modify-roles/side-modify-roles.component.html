@@ -1,0 +1,11 @@
+<h2>Modifier les rôles</h2>
+<div class="sidenav-input-wrapper">
+    <div class="roles" *ngFor="let user of this.asso.users">
+        <div class="user-names">
+            {{user.firstname}} {{user.lastname}}
+        </div>
+        <button  mat-fab extended  class="chip" [style.background-color]="this.assoService.colorOfRole(user.role,asso)" title="{{user.role}}"><input [value]="user.role" #rolemodifier
+            [(ngModel)]="user.role" size="{{user.role.length>0?user.role.length:1}}"  (focusout)="changeRole(user)" (keydown.enter)="changeRole(user);rolemodifier.blur()" (keyup)="this.typingRole()"
+            ></button>
+    </div>
+</div>

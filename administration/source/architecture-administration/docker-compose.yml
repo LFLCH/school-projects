@@ -1,0 +1,60 @@
+version: "3"
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    hostname: rabbitmq
+    container_name: rabbitmq
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq/
+    ports:
+      - "5672:5672"
+  db:
+    image: mysql
+    container_name: db
+    environment:
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_DATABASE: 'db'
+    volumes:
+      - my-db:/usr/share/mydb/data
+  backend:
+    image: lfiloche/administrationback
+    container_name: backend
+    command: npm run start
+    depends_on:
+      - db
+    ports:
+      - 3000:3000
+  frontend:
+    image: lfiloche/administrationfront
+    container_name: frontend
+    depends_on:
+      - backend
+  quarkus:
+    image: lfiloche/administrationquarkus
+    container_name: quarkus
+    volumes:
+      - ./quarkus-app:/usr/src/app
+    ports:
+      - 8081:8081
+    environment:
+      RABBITMQ_HOST: rabbitmq
+      RABBITMQ_PORT: 5672
+  maildev:
+    image: maildev/maildev
+    container_name: maildev
+    ports:
+      - "1080:1080"
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+
+volumes:
+  rabbitmq-data:
+  my-db:
+    driver: local

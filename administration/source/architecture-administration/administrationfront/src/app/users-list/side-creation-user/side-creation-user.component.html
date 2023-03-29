@@ -1,0 +1,22 @@
+<h2 >Ajout  d'un utilisateur</h2>
+<form class="sidenav-input-wrapper">
+    <mat-form-field>
+        <mat-label>Prénom</mat-label>
+        <input matInput [type]="'text'"  [placeholder]="'Indiquez un prénom'" [(ngModel)]="newUser.firstname" name="firstname">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Nom</mat-label>
+        <input matInput [type]="'text'"  [placeholder]="'Indiquez un nom de famille'" [(ngModel)]="newUser.lastname" name="lastname">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Âge</mat-label>
+        <input matInput [type]="'number'" min="1" [(ngModel)]="newUser.age" name="age">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Mot de passe</mat-label>
+        <input matInput [type]="'password'" [placeholder]="'Saisissez un mot de passe'" [(ngModel)]="newUser.password" name="password" autocomplete="off">
+    </mat-form-field>
+<div class="side-buttons-wrapper">
+    <button mat-fab extended color="accent" [disabled]="!ready()" (click)="validation()"> <mat-icon>person_add</mat-icon>Ajout</button>
+</div>
+</form>

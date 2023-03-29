@@ -1,0 +1,11 @@
+@import "../app.component.scss";
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+mat-card {
+    width: 30em;
+    max-width: 100%;
+}

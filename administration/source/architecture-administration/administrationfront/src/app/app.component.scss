@@ -1,0 +1,136 @@
+@import "../styles.scss";
+
+.body {
+    height: 80%;
+}
+h1{
+    padding-left: 1em;
+}
+h1,h2,h3{
+    color: $primary;
+    padding-top: 0.5em;
+    font-weight:700;
+}
+.basic-button{
+    all: unset; 
+    cursor: pointer;
+}
+.basic-button:hover {
+    background-color:rgba($color: #000000, $alpha: 0.05);
+    border-radius: 7px;
+}
+mat-drawer-container {
+    height: 100%;
+}
+mat-drawer {
+    width: 35vw;
+}
+h2{
+  padding: 1em;
+}
+.logo-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+
+}
+.logo-button > img {
+    width: 200px;
+}
+.mat-mdc-row:hover .mat-mdc-cell {
+    background-color:rgba($color: $primary, $alpha: 0.05);
+ }
+input {
+    border: 0px;
+    background-color: initial;
+}
+input:focus{
+    outline: 1px solid $accent;
+}
+
+.sidenav-input-wrapper input:focus{
+    outline: 0px;
+}
+.sidenav-input-wrapper mat-form-field{
+    width: 100%;
+    max-width: 20em;
+    margin-bottom: -1.25em;
+  }
+  .form-field-equiv{
+    width: 90%;
+  }
+  .sidenav-input-wrapper mat-form-field, .form-field-equiv{
+    margin-top: 5px;
+  }
+
+.sidenav-input-wrapper{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.revision {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+}
+.revision mat-slide-toggle{
+    display: flex;
+}
+.editing-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+tr.detail-row {
+    height: 0;
+  }
+  tr.detail-row:hover {
+    background-color:initial;
+  }
+  
+  .element-row td {
+    border-bottom-width: 0;
+  }
+  
+  .detail-element {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  td.hemmed button{
+    transform: scale(0.90);
+  }
+  td.hemmed{
+    overflow: visible;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+
+  .side-buttons-wrapper{
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+  }
+
+  td input{
+    width: -webkit-fill-available;
+  }
+
+  mat-card nav{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  mat-selection-list{
+    overflow: auto;
+  }
+  .editing-infos{
+    display: flex;
+    align-items:flex-start;
+    gap: 25px;
+    width: 150px;
+  }

@@ -1,0 +1,61 @@
+<app-nav></app-nav>
+<div *ngIf="this.connecte && this.user!==undefined; else elseBlock">
+    <h1>Bienvenue sur votre page personnelle</h1>
+    <h4>Bonjour <span id="username">{{this.user.firstname}}</span>, consultez modifiez les éléments de votre choix.</h4>
+    <div class="cards">
+        <mat-card>
+            <mat-card-header>
+              <mat-card-title>Utilisateurs</mat-card-title>
+              <mat-card-subtitle>Consultation et gestion des utilisateurs</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-actions align="end">
+              <button [routerLink]="['/users']" mat-fab extended color="primary">
+                <mat-icon>supervisor_account</mat-icon><span>Modifier</span>
+            </button>
+            </mat-card-actions>
+          </mat-card>
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>Associations</mat-card-title>
+              <mat-card-subtitle>Consultation et gestion des associations</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-actions align="end">
+              <button  [routerLink]="['/associations']"  mat-fab extended color="primary">
+                <mat-icon>location_city</mat-icon><span>Modifier</span>
+            </button>
+            </mat-card-actions>
+          </mat-card>
+          <mat-card>
+            <mat-card-header>
+              <mat-card-title>Compte</mat-card-title>
+              <mat-card-subtitle>Consultation et gestion des informations relatives au compte</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-actions align="end">
+              <button  [routerLink]="['/account']" mat-fab extended color="primary">
+                <mat-icon>settings</mat-icon><span>Modifier</span>
+            </button>
+            </mat-card-actions>
+          </mat-card>
+    </div>
+</div>
+<div>
+    <ng-template #elseBlock>
+        <h1>
+            Bienvenue sur le site des Administrations
+        </h1>
+        <div class="cards">
+            <mat-card>
+                <mat-card-header>
+                  <mat-card-title>Accéder à un compte</mat-card-title>
+                  <mat-card-subtitle>Cela permettra de modifier et avoir accès aux associations et utilisateurs</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-actions align="end">
+                  <button class="mat-and-text" [routerLink]="['/login']" mat-button>
+                    <mat-icon>perm_identity</mat-icon><span>Se connecter</span>
+                </button>
+                </mat-card-actions>
+              </mat-card>
+        </div>
+    </ng-template>
+</div>
+

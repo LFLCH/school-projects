@@ -1,0 +1,19 @@
+<button  [routerLink]="['']" class="logo-button basic-button"><img [src]="'/assets/img/logo.png'" alt="logo administration"></button>
+<form>
+  <mat-icon>perm_identity</mat-icon>
+  <h1>Connexion</h1>
+  <mat-form-field>
+    <mat-label>Numéro utilisateur</mat-label>
+    <input [(ngModel)]="typed_login" name="login" matInput>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Mot de passe</mat-label>
+    <input [(ngModel)]="password" name="password" [type]="hide ? 'password' : 'text'" matInput autocomplete="on">
+    <!-- <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>-->
+  </mat-form-field>
+  <button (click)="login()" mat-fab extended color="primary" [disabled]="typed_login.length==0 || password.length==0">
+    Se connecter
+  </button>
+</form>

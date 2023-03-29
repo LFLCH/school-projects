@@ -1,0 +1,50 @@
+<app-nav></app-nav>
+<h1>Mon compte</h1>
+<div class="revision">
+    <div class="editing-buttons">
+        <button mat-fab extended color="warn"  [disabled]="!this.editionMode" (click)="delete()">
+            <mat-icon>person_off</mat-icon>
+            Supprimer compte
+        </button>
+    </div>
+    <div class="editing-infos">
+      <mat-icon>{{this.editing?'cloud_off':'cloud_done'}}</mat-icon>
+      <mat-slide-toggle (toggleChange)="toggleEditionMode()" [checked]="this.editionMode"> {{this.editionMode?'Édition':'Révision'}}</mat-slide-toggle>
+    </div>
+  </div>
+    <div class="settings">
+        <form>
+            <div class="setting-line">
+                <h3>Nom</h3>
+                <input  [type]="'text'"  [placeholder]="'Indiquez un nom de famille'" [(ngModel)]="user.lastname" name="lastname" [disabled]="!this.editionMode" (keyup)="modif()" (change)="modif()">
+            </div>
+            <mat-divider></mat-divider>
+            <div class="setting-line">
+                <h3>Prénom</h3>
+                <input  [type]="'text'"  [placeholder]="'Indiquez un prénom'" [(ngModel)]="user.firstname" name="firstname" [disabled]="!this.editionMode" (keyup)="modif()" (change)="modif()">
+            </div>
+            <mat-divider></mat-divider>
+            <div class="setting-line">
+                <h3>Âge</h3>
+                <input  [type]="'number'" min="1" [(ngModel)]="user.age" name="age" [disabled]="!this.editionMode" (keyup)="modif()" (change)="modif()">
+            </div>
+            <mat-divider></mat-divider>
+            <div class="setting-line">
+                <h3>Mot de passe</h3>
+                <input  [type]="'password'" [placeholder]="'Saisissez un mot de passe'" [(ngModel)]="user.password" name="password" autocomplete="off" [disabled]="!this.editionMode" (keyup)="modif()" (change)="modif()">
+            </div>
+            <mat-divider></mat-divider>
+            <div class="settings-buttons-wrapper">
+            <button mat-fab extended  *ngIf="this.editing" (click)="confirm()" [disabled]="!editionMode">
+                <mat-icon>how_to_reg</mat-icon>
+                Confirmer modifications
+            </button>
+            <button mat-fab extended   *ngIf="this.editing" color="primary" (click)="cancel()" [disabled]="!editionMode">
+                <mat-icon>cancel</mat-icon>
+                Annuler
+            </button>
+        </div>
+    </form>
+    <div>
+    </div>
+</div>

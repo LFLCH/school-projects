@@ -1,0 +1,33 @@
+<mat-accordion multi>
+    <mat-expansion-panel [expanded]="true" >
+      <mat-expansion-panel-header >
+        <mat-panel-title>
+            Sélectionner
+        </mat-panel-title>
+        <mat-panel-description>
+          Membres de l'association
+          <mat-icon>people</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <mat-selection-list [(ngModel)]="checked" (selectionChange)="userChecking()">
+        <mat-list-option *ngFor="let user of users"  selected="{{isPartOfSelection(user)}}" [value]="user" [ngStyle]="{'display':!isDisplayed(user)?'none':''}">
+            {{user.firstname}} {{user.lastname}}
+        </mat-list-option>
+        <mat-list-option *ngIf="displayedUsers.length==0" disabled="true" selected="true">Aucun utilisateur ne correspond à votre recherche</mat-list-option>
+    </mat-selection-list>
+    </mat-expansion-panel>
+  
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Filtrer
+        </mat-panel-title>
+        <mat-panel-description>
+          Recherche rapide 
+          <mat-icon>person_search</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <app-core-search-user [users]="users"  (filterChange)="searching()" ></app-core-search-user>
+    </mat-expansion-panel>
+  </mat-accordion>

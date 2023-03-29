@@ -1,0 +1,67 @@
+# version: "3"
+# services:
+#   db:
+#     image: mysql
+#     container_name: db
+#     environment:
+#       MYSQL_DATABASE: 'db'
+#       # Password for root accessl
+#       MYSQL_ROOT_PASSWORD: 'root'
+    
+#     volumes:
+#       - my-db:/usr/share/mydb/data
+#   web:
+#     image: lfiloche/webback
+#     command: npm run start:dev
+#     depends_on:
+#       - db
+#     ports:
+#       - 3000:3000
+#     volumes:
+#       - .:/app
+#       # Mount the local code directory to the container
+#       - ./src:/app/src
+# volumes:
+#   my-db:
+#     driver: local
+
+
+version: '3'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    hostname: rabbitmq
+    container_name: rabbitmq
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq/
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  db:
+    image: mysql
+    container_name: db
+    environment:
+      MYSQL_DATABASE: 'db'
+      # Password for root accessl
+      MYSQL_ROOT_PASSWORD: 'root'
+    ports:
+      - "3306:3306"
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    links:
+      - db
+    depends_on:
+      - db
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    command: npm run start:dev
+  
+volumes:
+  rabbitmq-data:

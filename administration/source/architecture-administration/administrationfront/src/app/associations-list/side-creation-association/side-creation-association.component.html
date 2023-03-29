@@ -1,0 +1,13 @@
+<h2 >Ajout  d'une association</h2>
+<form class="sidenav-input-wrapper">
+<mat-form-field>
+    <mat-label>Nom</mat-label>
+    <input matInput [type]="'text'"  [placeholder]="'Saisissez un nom'" [(ngModel)]="creatingAsso.name" name="name">
+</mat-form-field>
+<div class="form-field-equiv">
+    <app-core-modify-members [asso]="creatingAsso"></app-core-modify-members>
+</div>
+<div class="side-buttons-wrapper">
+    <button mat-fab extended color="accent" [disabled]="!ready()" (click)="validation()"> <mat-icon>domain_add</mat-icon>Ajout</button>
+</div>
+</form>

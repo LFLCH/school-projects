@@ -1,0 +1,11 @@
+<mat-card>
+    <mat-card-content>
+        <nav>
+            <button  [routerLinkActive]="['']"   [routerLink]="['']" class="logo-button basic-button"><img [src]="'/assets/img/logo.png'" alt="logo administration"></button>
+            <button class="mat-and-text" (click)="this.logout()" *ngIf="this.connecte ; else elseBlock"  mat-fab extended color="accent"> <mat-icon>logout</mat-icon><span>Se déconnecter</span></button>
+            <ng-template #elseBlock>
+                <button mat-fab extended color="primary" [routerLink]="['/login']"><mat-icon>perm_identity</mat-icon><span>Se connecter</span> </button>
+            </ng-template>
+        </nav>
+    </mat-card-content>
+  </mat-card>

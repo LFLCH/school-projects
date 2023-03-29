@@ -1,0 +1,95 @@
+<app-nav></app-nav>
+<div class="body">
+  <h1>
+    Liste des utilisateurs
+  </h1>
+  <mat-drawer-container autosize="false">
+      <div class="revision">
+        <div class="editing-buttons">
+          <button mat-fab extended [color]="this.searchMode?'none':'primary'" (click)="toggleDrawer(drawer,'search')">
+            <mat-icon>search</mat-icon>
+            Rechercher
+          </button>
+          <button mat-fab extended   [color]="addUserMode?'none':'accent'" [disabled]="!this.editionMode" (click)="toggleDrawer(drawer,'add')">
+            <mat-icon>person_add</mat-icon>
+            Ajouter un utilisateur
+          </button>
+        </div>
+        <div class="editing-infos">
+          <mat-icon>{{this.editing?'cloud_off':'cloud_done'}}</mat-icon>
+          <mat-slide-toggle (toggleChange)="toggleEditionMode()"> {{this.editionMode?'Édition':'Révision'}}</mat-slide-toggle>
+        </div>
+      </div>
+      <table mat-table
+      [dataSource]="displayedUsers" multiTemplateDataRows
+      class="mat-elevation-z8">
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef> 
+          <span *ngIf="!this.editionMode;else delIcon">
+            id
+            <mat-icon style="visibility: hidden;position:relative;">delete</mat-icon>
+          </span>
+          <ng-template #delIcon>
+            <span>
+              <mat-icon>delete</mat-icon>
+            </span>
+          </ng-template>
+        </th>
+        <td mat-cell *matCellDef="let user"> 
+          <span *ngIf="!this.editionMode; else delBlock">{{user.id}}</span>
+          <ng-template #delBlock><button mat-mini-fab disabled (click)="delete(user)" [disabled]="!this.editionMode"><mat-icon>delete</mat-icon></button>
+          </ng-template>
+        </td>
+      </ng-container>
+      
+      <ng-container matColumnDef="firstname">
+        <th mat-header-cell *matHeaderCellDef> Prénom </th>
+        <td mat-cell *matCellDef="let user">
+          <input (focusout)="modifyinguser(user)"  (keydown.enter)="enter($event);"  [disabled]="!this.editionMode" (keyup)="editing=true"  [type]="'text'" [(ngModel)]="user.firstname">  
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="lastname">
+        <th mat-header-cell *matHeaderCellDef> Nom  </th>
+        <td mat-cell *matCellDef="let user"> <input (focusout)="modifyinguser(user)"  (keydown.enter)="enter($event);"  [disabled]="!this.editionMode" (keyup)="editing=true"  [type]="'text'" [(ngModel)]="user.lastname"> </td>
+      </ng-container>
+      <ng-container matColumnDef="age">
+        <th mat-header-cell *matHeaderCellDef> Âge </th>
+        <td mat-cell *matCellDef="let user"> <input (focusout)="modifyinguser(user)"  (keydown.enter)="enter($event);"  [disabled]="!this.editionMode" (keyup)="editing=true" [type]="'number'" min="1" [(ngModel)]="user.age"> </td>
+      </ng-container>
+      <ng-container matColumnDef="expand">
+        <th mat-header-cell *matHeaderCellDef aria-label="row actions">Associations</th>
+        <td mat-cell *matCellDef="let element"  class="hemmed">
+          <button  mat-fab [color]="expandedElement !== element?'primary':'none'"  (click)="$event.stopPropagation();toggleDetails(element,'arrow')">
+            <mat-icon>workspaces</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+      
+      <!-- Expanded Content Column  -->
+      <ng-container matColumnDef="expandedDetail">
+        <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplayWithExpand.length" >
+          <div [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'">
+            <div class="detail-element">
+              <a *ngFor="let asso of this.service.getUserAssos(element.id)" [routerLink]="'/associations'" [queryParams]="{'id':asso.id}"> {{asso.name}}, </a>
+            </div>
+          </div>
+        </td>
+      </ng-container>
+      
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplayWithExpand"></tr>
+    <tr mat-row *matRowDef="let element; columns: columnsToDisplayWithExpand;" class="element-row"
+        (click)="toggleDetails(element,'clic')">
+    </tr>
+    <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="detail-row"></tr>
+  </table>
+<mat-drawer #drawer mode="side" (closed)="closeSearchMode();addUserMode=false;">
+  <div *ngIf="this.searchMode">
+   <app-slide-search-user [users]="users" [(displayedUsers)]="this.displayedUsers" (filterChange)="updateSearchUrl()"></app-slide-search-user>
+  </div>
+  <div *ngIf="addUserMode">
+    <app-side-creation-user (creation)="addUserRow($event)"></app-side-creation-user>
+  </div>
+  
+</mat-drawer>
+</mat-drawer-container>
+</div>

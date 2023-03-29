@@ -1,0 +1,23 @@
+version: "3"
+services:
+  db:
+    image: mysql
+    container_name: db
+    environment:
+      MYSQL_DATABASE: 'db'
+      # Password for root accessl
+      MYSQL_ROOT_PASSWORD: 'root'
+    
+    volumes:
+      - my-db:/usr/share/mydb/data
+  web:
+    image: administrationback
+    command: npm run start
+    depends_on:
+      - db
+    ports:
+      - 3000:3000
+      
+volumes:
+  my-db:
+    driver: local
