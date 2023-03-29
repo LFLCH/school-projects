@@ -105,17 +105,7 @@ De plus, certains composants dits ```side``` contiennent un sous-composant ```co
 <img src="src/assets/visuels/structure_frontend.png" width="500">
 
 
-## Commentaires
-
-### Système de rôles
-Le système de rôle n'a été ajouté que très récemment, et peut encore contenir des bugs. Il a été rajouté sur une version fonctionnelle du projet. C'est pourquoi il peut à l'heure actuelle être localement mal intégré dans le code. Si cela est trop envahissant, sachez qu'il est possible de revenir à la version antérieure aux rôles via ```git checkout c9fd1a22215cd5f98781a7cdae22fb07c9056ec4```
-
-### Branches
-
-Ce dépôt contient plusieurs branches, mais seule la branche courante  ```main``` est à prendre en compte, les deux autres ne sont plus maintenues.
-- La branche ```main``` contient le projet fonctionnel et opérationnel. 
-- La branche ```al``` est une branche qui a été utilisée dans une optique de conteneurisation du projet.
-- La branche ```otherVersion``` a permis à @BastienFaisant de s'initier à Angular, en implémentant les première fonctionnalités du projet. 
+## A propos
 
 ### Angular
 
