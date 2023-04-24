@@ -109,16 +109,6 @@ This simulation was done within the framework of our C++ class, where we learnt 
 
 https://user-images.githubusercontent.com/62034725/213896468-51edd675-d7ee-4bb3-8d6d-012a0cb9bba7.mp4
 
-# Projects retrieving
-////////////////////////////////////////////////////////////////////////
-
-🚧The Following projects presentations are not finished of editing🚧<br>
-*I am currently looking for my old projects* <br>
-*and the executables that were associated with them*
-
-//////////////////////////////////////////////////////////////////////
-
-
 ## Hackathon
 ### Presentation
 📆 : 2 days (May 2022)
@@ -128,6 +118,10 @@ https://user-images.githubusercontent.com/62034725/213896468-51edd675-d7ee-4bb3-
 🛠️ : ```java```
 
 📖 : 2D action-adventure game in less than 28 hours. In Java, with the Swing library. It was a subject in its own right, but we did not have a specific lesson (we followed the instructions given in the morning)
+
+📸 : A little picture to show how it looked. 
+
+<img src="https://user-images.githubusercontent.com/62034725/234015920-a68ff101-eeac-4d9a-ad61-46b224a2be9b.png" width="500">
 
 ## Hangman Game
 ### Presentation
@@ -139,8 +133,6 @@ https://user-images.githubusercontent.com/62034725/213896468-51edd675-d7ee-4bb3-
 
 📖 : Game development with basic web and database technologies of a hangman game. It was the final part of our WEB class, where we learnt the fundamentals, with a lot of practical works.
 
-### Demo
-📹 : Take a look !
-[Just here](https://drive.google.com/file/d/1dgE5JK1lGmYclr8jPNy0uFKebDlsw2aC/view) 
+📸 : The game looked like that. The user had to guess a word (randomly picked from the database), making as few mistakes as possible in the letters' choice.
 
-
+<img src="https://user-images.githubusercontent.com/62034725/234013895-01a3faa3-bc28-431e-b8d8-fdf2784df4d3.png" width="500">
