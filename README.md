@@ -1,16 +1,41 @@
 # school-projects
-Short presentation of my school projects.
-For each command you see in this readme, make sure you are in the associated folder before running it.
+Presentation of some of my school projects !
 
-<!-- # Ongoing projects
-## Brain tumor
+<!--
+## [TweetTrends](https://github.com/Kali-ki/TweetTrends)
+### Presentation
+📆 : 3 months (from March 2023 to May 2023) 
+🧑‍💻 *️⃣2️⃣ : In pairs, with [Kilian Cornec](https://github.com/Kali-Ki) <br>
+🛠️ : ```Python```
+📖 : data engineering class
+-->
+
+## Direct Games
+### Presentation
+📆 : 2 months (from April 2023 to May 2023) 
+🧑‍💻 *️⃣2️⃣ : In pairs, with [Louis-Gabriel Capliez](https://github.com/EdgeOfMemory-cloud) <br>
+🛠️ : ```Android Studio``` ```java```
+📖 : As part of our mobile programming courses, we had to create a small gaming app. The idea was to learn to use the the Android API, by creating games that make the most of its main features. Therefore, we coded 6 small games :
+1. _Quiz Capital_ : a multiple choice questionnaire about the world capitals.
+2. _Balance It_ : a square is moving randomly and the player must place the star he is controlling on it by leaning the phone in the right direction.
+3. _Mind the Swipe_ : A memory game where the player must remember the association of colors with swipe movements.
+4. _Maths Questions_ : automatically generated calculus are displayed, and the player must solve them.
+5. _True / False_ : a general knowledge question is asked, and the player must answer by swipping on the right or left.
+6. _Light On_ : The player controls a switch by hiding or showing the luminosity sensor. He has to switch the light on during the night, and switch it off during the day.
+
+📸 : Some captures about Light On, Balance It & True False
+
+<img src="https://github.com/LFLCH/school-projects/assets/62034725/8b900318-ca49-4253-af6d-8284de255840" alt="Light On" height="400"> 
+<img src="https://github.com/LFLCH/school-projects/assets/62034725/d066bc0b-e56b-4346-ac61-953404d21266" alt="Balance It" height="400"> 
+<img src="https://github.com/LFLCH/school-projects/assets/62034725/60a752a4-9012-4213-8478-8f1b61bd3d3c" alt="True False" height="400"><br>
+
+<!-- ## Visual Gliome
 ### Presentation
 📆 : 5 months (from November 2022 to April 2023) 
 🧑‍💻 *️⃣4️⃣ : 
 https://github.com/FenrirWolf4566/brain-tumor-->
 
-# Completed projects
-## While Compiler
+## [While Compiler](https://github.com/Kali-ki/While-Compilateur)
 ### Presentation
 📆 : 3 months (from mid-October 2022 to mid-January 2023) 
 
@@ -42,7 +67,7 @@ Format : ./runner.bash [-a] [-t] [-c] [-r] [-p] [-e] file.while
 Just have fun by editing the program.while, taking the [*gwhile.g*](whilecompiler/gwhile.g) rules into consideration, or reading seeing the .while file examples. And if you understand french, you can  read the [*rapport_fr.pdf*](whilecompiler/rapport_fr.pdf) file. 
 
 
-## Administration 
+## [Administration](https://github.com/LFLCH/school-projects/tree/main/administration/source)
 ### Presentation
 📆 : 1 month (between December 2022 & January 2023) <br>
 
@@ -89,7 +114,7 @@ It takes place in the 'Tools & Methods of modeling' class, where we learnt (amon
 
 https://user-images.githubusercontent.com/62034725/213699879-90bce329-80d7-45a2-9de0-b41e1d800626.mp4
 
-## Fourmis
+## [Fourmis](https://github.com/LFLCH/school-projects/tree/main/fourmis/Fourmis)
 ### Presentation
 📆 : 1 month (Between April and May 2022)
 
