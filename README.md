@@ -1,21 +1,30 @@
 # school-projects
 Presentation of some of my school projects !
 
-<!--
 ## [TweetTrends](https://github.com/Kali-ki/TweetTrends)
 ### Presentation
 📆 : 3 months (from March 2023 to May 2023) 
-🧑‍💻 *️⃣2️⃣ : In pairs, with [Kilian Cornec](https://github.com/Kali-Ki) <br>
-🛠️ : ```Python```
-📖 : data engineering class
--->
+
+🧑‍💻 *️⃣2️⃣ : In pairs, with [Kilian Cornec](https://github.com/Kali-Ki) 
+
+🛠️ : ```Python``` ```eel``` ```javascript```
+
+📖 : In the context of our data engineering course, we carried out a project to visualize tweeter trends. The challenge was not only to visualize the data, but also to retrieve it using scrapping tools, and to clean it in order to make it meaningful.
+
+📸 : A screenshot of the project
+
+<img src="https://github.com/LFLCH/school-projects/assets/62034725/0e526198-6fcf-40f5-bf8d-ac5366c7ecdf" alt="Tweet Trends" width="500"> 
+
 
 ## Direct Games
 ### Presentation
-📆 : 2 months (from April 2023 to May 2023) 
-🧑‍💻 *️⃣2️⃣ : In pairs, with [Louis-Gabriel Capliez](https://github.com/EdgeOfMemory-cloud) <br>
+📆 : 2 months (from April 2023 to May 2023)  
+
+🧑‍💻 *️⃣2️⃣ : In pairs, with [Louis-Gabriel Capliez](https://github.com/EdgeOfMemory-cloud) 
+
 🛠️ : ```Android Studio``` ```java```
-📖 : As part of our mobile programming courses, we had to create a small gaming app. The idea was to learn to use the the Android API, by creating games that make the most of its main features. Therefore, we coded 6 small games :
+
+📖 : As part of our mobile programming courses, we had to create a small gaming app. The idea was to learn to use the the Android API, by designing games that make the most of its main features. Therefore, we coded 6 small games :
 1. _Quiz Capital_ : a multiple choice questionnaire about the world capitals.
 2. _Balance It_ : a square is moving randomly and the player must place the star he is controlling on it by leaning the phone in the right direction.
 3. _Mind the Swipe_ : A memory game where the player must remember the association of colors with swipe movements.
@@ -29,11 +38,21 @@ Presentation of some of my school projects !
 <img src="https://github.com/LFLCH/school-projects/assets/62034725/d066bc0b-e56b-4346-ac61-953404d21266" alt="Balance It" height="400"> 
 <img src="https://github.com/LFLCH/school-projects/assets/62034725/60a752a4-9012-4213-8478-8f1b61bd3d3c" alt="True False" height="400"><br>
 
-<!-- ## Visual Gliome
+## [Visual Gliome](https://github.com/FenrirWolf4566/brain-tumor)
 ### Presentation
 📆 : 5 months (from November 2022 to April 2023) 
-🧑‍💻 *️⃣4️⃣ : 
-https://github.com/FenrirWolf4566/brain-tumor-->
+
+🧑‍💻 *️⃣4️⃣ : Group of 4, with [Louis Morlot-Pinta](https://github.com/comlouis-creator), [Benjamin De Zordo](https://github.com/FenrirWolf4566) & [Quentin Legrand](https://github.com/Nesiam)
+
+🛠️ : ```Python``` ```FastAPI``` ```Astro``` ```Javascript```
+
+📖 : A web App using AI for the detection of brain tumors. 
+
+📸 : The following image is a capture of the analyzer page where the user had dropped MRI files and received an analyze from the AI.
+
+<img src="https://github.com/LFLCH/school-projects/assets/62034725/2060dca2-d962-4604-833d-bf84ab9de7bc" height="400">
+
+
 
 ## [While Compiler](https://github.com/Kali-ki/While-Compilateur)
 ### Presentation
@@ -100,7 +119,7 @@ https://user-images.githubusercontent.com/62034725/213479168-936b3705-f282-48c8-
 
 🧑‍💻 *️⃣2️⃣ : In pairs, with [Bastien Faisant](https://github.com/Unstery) <br>
 
-🛠️ : ```java```
+🛠️ : ```java``` ```awt```
 
 📖 : Simple Editor is, as the name suggests a basic text editor. It has all the main common features that all text editors do share. Indeed, after having wrote some text, erasing, moving the cursor, selecting part of the text, copy, paste, undo and redo are actions you can apply to it. <br>
 It takes place in the 'Tools & Methods of modeling' class, where we learnt (among other things like the importance of UML and the Software development life-cycle with agile methods) the 'design patterns' concept. We have put into practice this knowledge by implementing this editor, and trying to respect the [SOLID](https://en.wikipedia.org/wiki/SOLID) principles in the class design.
