@@ -5,7 +5,7 @@ Presentation of some of my school projects !
 ### Presentation
 📆 : 3 months (from March 2023 to May 2023) 
 
-🧑‍💻 *️⃣2️⃣ : In pairs, with [Kilian Cornec](https://github.com/Kali-Ki) 
+🧑‍💻🧑‍💻 : In pairs, with [Kilian Cornec](https://github.com/Kali-Ki) 
 
 🛠️ : ```Python``` ```eel``` ```javascript```
 
@@ -15,12 +15,25 @@ Presentation of some of my school projects !
 
 <img src="https://github.com/LFLCH/school-projects/assets/62034725/0e526198-6fcf-40f5-bf8d-ac5366c7ecdf" alt="Tweet Trends" width="500"> 
 
+## [Kittme](https://github.com/esir-secretVideoGameDevs/gameJam2023)
+📆 : 2 days - 40 hours (March 6th & 7th 2023)
+
+🧑‍💻 🧑‍💻 🧑‍💻 🧑‍💻 🧑‍💻 : Group of 5, with [Louis-Gabriel Capliez](https://github.com/EdgeOfMemory-cloud), [Kilian Cornec](https://github.com/Kali-ki), [Valère Billaud](https://github.com/Marcsept) & [Louis Ruellou](https://github.com/Spraduss)
+
+🛠️ : ```Unity``` ```C#```
+
+📖 : Kittme is a game that was conceived and realized in the context of the ESIR GameJam 2023. The theme of this edition was "Break the Rules". For the rest, we had carte blanche. It was an opportunity for us to discover how to code in Unity, but more importantly to have fun, letting our imaginations run wild !
+
+📸 : Some captures of the game. The goal is for the heroe to quit the game. However it is not that easy, given that he seems to live in an infinite loop...
+
+<img src="https://github.com/LFLCH/school-projects/assets/62034725/aad4963a-b9f2-49d6-9e7d-6fcf42ff2370" alt="Kittme" width="500"> 
+<img src="https://github.com/LFLCH/school-projects/assets/62034725/074fa9a8-39c6-45ac-8b9d-4f2d07638614" alt="Kittme" width="500"> 
 
 ## Direct Games
 ### Presentation
 📆 : 2 months (from April 2023 to May 2023)  
 
-🧑‍💻 *️⃣2️⃣ : In pairs, with [Louis-Gabriel Capliez](https://github.com/EdgeOfMemory-cloud) 
+🧑‍💻 🧑‍💻 : In pairs, with [Louis-Gabriel Capliez](https://github.com/EdgeOfMemory-cloud) 
 
 🛠️ : ```Android Studio``` ```java```
 
@@ -42,7 +55,7 @@ Presentation of some of my school projects !
 ### Presentation
 📆 : 5 months (from November 2022 to April 2023) 
 
-🧑‍💻 *️⃣4️⃣ : Group of 4, with [Louis Morlot-Pinta](https://github.com/comlouis-creator), [Benjamin De Zordo](https://github.com/FenrirWolf4566) & [Quentin Legrand](https://github.com/Nesiam)
+🧑‍💻 🧑‍💻 🧑‍💻 🧑‍💻 : Group of 4, with [Louis Morlot-Pinta](https://github.com/comlouis-creator), [Benjamin De Zordo](https://github.com/FenrirWolf4566) & [Quentin Legrand](https://github.com/Nesiam)
 
 🛠️ : ```Python``` ```FastAPI``` ```Astro``` ```Javascript```
 
@@ -58,7 +71,7 @@ Presentation of some of my school projects !
 ### Presentation
 📆 : 3 months (from mid-October 2022 to mid-January 2023) 
 
-🧑‍💻 *️⃣3️⃣ : Group of three, with [Bastien Faisant](https://github.com/Unstery) & [Kilian Cornec](https://github.com/Kali-ki)<br>
+🧑‍💻 🧑‍💻 🧑‍💻 : Group of three, with [Bastien Faisant](https://github.com/Unstery) & [Kilian Cornec](https://github.com/Kali-ki)<br>
 
 🛠️ : ```java``` ```antlr``` ```c++``` ```bash```
 
@@ -90,7 +103,7 @@ Just have fun by editing the program.while, taking the [*gwhile.g*](whilecompile
 ### Presentation
 📆 : 1 month (between December 2022 & January 2023) <br>
 
-🧑‍💻 *️⃣2️⃣ : In pairs, with [Bastien Faisant](https://github.com/Unstery) <br>
+🧑‍💻 🧑‍💻: In pairs, with [Bastien Faisant](https://github.com/Unstery) <br>
 
 🛠️ : ```angular```  ```nestjs``` ```quarkus``` ```docker```
 
@@ -117,7 +130,7 @@ https://user-images.githubusercontent.com/62034725/213479168-936b3705-f282-48c8-
 ### Presentation 
 📆 : 1 month (During the whole month of October 2022) <br>
 
-🧑‍💻 *️⃣2️⃣ : In pairs, with [Bastien Faisant](https://github.com/Unstery) <br>
+🧑‍💻 🧑‍💻 : In pairs, with [Bastien Faisant](https://github.com/Unstery) <br>
 
 🛠️ : ```java``` ```awt```
 
@@ -137,7 +150,7 @@ https://user-images.githubusercontent.com/62034725/213699879-90bce329-80d7-45a2-
 ### Presentation
 📆 : 1 month (Between April and May 2022)
 
-🧑‍💻 *️⃣1️⃣ : Just me !
+🧑‍💻 : Just me !
 
 🛠️ : ```c++```
 
@@ -157,7 +170,7 @@ https://user-images.githubusercontent.com/62034725/213896468-51edd675-d7ee-4bb3-
 ### Presentation
 📆 : 2 days (May 2022)
 
-🧑‍💻 : Group of 4 students :  [Jérémy Bindel](https://github.com/J-Bindel), [Fanny Nyatsikor](https://github.com/itsFanix), [Yazid Benjamaa](https://github.com/Xacone) & I.
+🧑‍💻 🧑‍💻 🧑‍💻 🧑‍💻 : Group of 4 students :  [Jérémy Bindel](https://github.com/J-Bindel), [Fanny Nyatsikor](https://github.com/itsFanix), [Yazid Benjamaa](https://github.com/Xacone).
 
 🛠️ : ```java```
 
@@ -171,7 +184,7 @@ https://user-images.githubusercontent.com/62034725/213896468-51edd675-d7ee-4bb3-
 ### Presentation
 📆 : 1 month (June 2021)
 
-🧑‍💻 : In pairs, with Jérémy Bindel
+🧑‍💻 🧑‍💻 : In pairs, with [Jérémy Bindel](https://github.com/J-Bindel)
 
 🛠️ : ```HTML5``` ```CSS``` ```JavaScript``` ```PHP```
 
