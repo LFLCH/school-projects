@@ -180,6 +180,23 @@ https://user-images.githubusercontent.com/62034725/213896468-51edd675-d7ee-4bb3-
 
 <img src="https://user-images.githubusercontent.com/62034725/234015920-a68ff101-eeac-4d9a-ad61-46b224a2be9b.png" width="500">
 
+## Math project
+### Presentation
+📆 : 1 month (April - May 2022)
+
+🧑‍💻 🧑‍💻 🧑‍💻 : Group of 3 students : [Kilian Cornec](https://github.com/Kali-ki) & [Thomas Delapart]([https://github.com/Kali-ki](https://github.com/Thomega35).
+
+🛠️ : ```Matlab```
+
+📖 : Several classical maths problems, that we had to illustrate or solve by programming in Matlab. The problems where about Statistics with random picking, Matrices manipulations with Eigenvalues, Geometry with point in a triangle tests, and Gradient Descents. 
+
+📸 : A little overview to the graphs and UI we produced.
+
+<img src="https://github.com/LFLCH/school-projects/assets/62034725/6e5c6a68-ecbc-47e9-8793-62ac2f08eed4" height="300">
+<img src="https://github.com/LFLCH/school-projects/assets/62034725/94368dad-2444-4ca6-94ce-c2e303644dab" height="300">
+<img src="https://github.com/LFLCH/school-projects/assets/62034725/aeba6449-79a7-4d00-884d-a735ee4d6f29" height="300">
+
+
 ## Hangman Game
 ### Presentation
 📆 : 1 month (June 2021)
