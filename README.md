@@ -184,7 +184,7 @@ https://user-images.githubusercontent.com/62034725/213896468-51edd675-d7ee-4bb3-
 ### Presentation
 📆 : 1 month (April - May 2022)
 
-🧑‍💻 🧑‍💻 🧑‍💻 : Group of 3 students : [Kilian Cornec](https://github.com/Kali-ki) & [Thomas Delapart]([https://github.com/Kali-ki](https://github.com/Thomega35).
+🧑‍💻 🧑‍💻 🧑‍💻 : Group of 3 students : [Kilian Cornec](https://github.com/Kali-ki) & [Thomas Delapart](https://github.com/Thomega35).
 
 🛠️ : ```Matlab```
 
